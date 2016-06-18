@@ -145,7 +145,6 @@ ECHO Minimizing post processing shader...
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
     <None Include="src\post_processing_shader.glsl" />
     <None Include="src\fragment_shader.glsl">
       <FileType>Text</FileType>
