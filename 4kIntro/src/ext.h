@@ -19,20 +19,20 @@
 extern void *myglfunc[NUMFUNCTIONS];
 
 
-#define oglCreateShaderProgramv         ((PFNGLCREATESHADERPROGRAMVPROC)myglfunc[0])
-#define oglGenProgramPipelines          ((PFNGLGENPROGRAMPIPELINESPROC)myglfunc[1])
-#define oglBindProgramPipeline          ((PFNGLBINDPROGRAMPIPELINEPROC)myglfunc[2])
-#define oglUseProgramStages             ((PFNGLUSEPROGRAMSTAGESPROC)myglfunc[3])
-#define oglProgramUniform4fv            ((PFNGLPROGRAMUNIFORM4FVPROC)myglfunc[4])
-#define oglGenFramebuffers              ((PFNGLGENFRAMEBUFFERSPROC)myglfunc[5])
-#define oglBindFramebuffer              ((PFNGLBINDFRAMEBUFFERPROC)myglfunc[6])
-#define oglTexStorage2D                 ((PFNGLTEXSTORAGE2DPROC)myglfunc[7])
-#define oglDrawBuffers                  ((PFNGLDRAWBUFFERSPROC)myglfunc[8])
-#define oglFramebufferTexture           ((PFNGLFRAMEBUFFERTEXTUREPROC)myglfunc[9])
+#define glCreateShaderProgramv         ((PFNGLCREATESHADERPROGRAMVPROC)myglfunc[0])
+#define glGenProgramPipelines          ((PFNGLGENPROGRAMPIPELINESPROC)myglfunc[1])
+#define glBindProgramPipeline          ((PFNGLBINDPROGRAMPIPELINEPROC)myglfunc[2])
+#define glUseProgramStages             ((PFNGLUSEPROGRAMSTAGESPROC)myglfunc[3])
+#define glProgramUniform4fv            ((PFNGLPROGRAMUNIFORM4FVPROC)myglfunc[4])
+#define glGenFramebuffers              ((PFNGLGENFRAMEBUFFERSPROC)myglfunc[5])
+#define glBindFramebuffer              ((PFNGLBINDFRAMEBUFFERPROC)myglfunc[6])
+#define glTexStorage2D                 ((PFNGLTEXSTORAGE2DPROC)myglfunc[7])
+#define glDrawBuffers                  ((PFNGLDRAWBUFFERSPROC)myglfunc[8])
+#define glFramebufferTexture           ((PFNGLFRAMEBUFFERTEXTUREPROC)myglfunc[9])
 
 #ifdef DEBUG
-#define oglGetProgramiv          ((PFNGLGETPROGRAMIVPROC)myglfunc[10])
-#define oglGetProgramInfoLog     ((PFNGLGETPROGRAMINFOLOGPROC)myglfunc[11])
+#define glGetProgramiv          ((PFNGLGETPROGRAMIVPROC)myglfunc[10])
+#define glGetProgramInfoLog     ((PFNGLGETPROGRAMINFOLOGPROC)myglfunc[11])
 #endif
 
 // init

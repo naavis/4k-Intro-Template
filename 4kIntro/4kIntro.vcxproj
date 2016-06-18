@@ -75,7 +75,9 @@
     <Bscmake />
     <PreBuildEvent>
       <Command>ECHO Minimizing fragment shader...
-"$(SolutionDir)shader_minifier.exe" "$(ProjectDir)src/fragment_shader.glsl" --preserve-externals -o "$(ProjectDir)src/fragment_shader.inl"</Command>
+"$(SolutionDir)shader_minifier.exe" "$(ProjectDir)src/fragment_shader.glsl" --preserve-externals -o "$(ProjectDir)src/fragment_shader.inl"
+ECHO Minimizing post processing shader...
+"$(SolutionDir)shader_minifier.exe" "$(ProjectDir)src/post_processing_shader.glsl" --preserve-externals -o "$(ProjectDir)src/post_processing_shader.inl"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -118,7 +120,9 @@
     <Bscmake />
     <PreBuildEvent>
       <Command>ECHO Minimizing fragment shader...
-"$(SolutionDir)shader_minifier.exe" "$(ProjectDir)src/fragment_shader.glsl" --preserve-externals -o "$(ProjectDir)src/fragment_shader.inl"</Command>
+"$(SolutionDir)shader_minifier.exe" "$(ProjectDir)src/fragment_shader.glsl" --preserve-externals -o "$(ProjectDir)src/fragment_shader.inl"
+ECHO Minimizing post processing shader...
+"$(SolutionDir)shader_minifier.exe" "$(ProjectDir)src/post_processing_shader.glsl" --preserve-externals -o "$(ProjectDir)src/post_processing_shader.inl"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -141,10 +145,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\post_processing_shader.glsl" />
     <None Include="src\fragment_shader.glsl">
       <FileType>Text</FileType>
     </None>
     <None Include="src\fragment_shader.inl" />
+    <None Include="src\post_processing_shader.inl" />
     <None Include="src\vertex_shader.inl" />
   </ItemGroup>
   <ItemGroup>
