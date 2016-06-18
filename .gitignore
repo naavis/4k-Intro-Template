@@ -1,0 +1,6 @@
+*.db
+4kIntro/bin/*
+4kIntro/exe/*
+.vs/*
+*.vcxproj.user
+*.opendb
