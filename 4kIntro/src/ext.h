@@ -11,9 +11,9 @@
 
 
 #ifdef DEBUG
-#define NUMFUNCTIONS 7
+#define NUMFUNCTIONS 12
 #else
-#define NUMFUNCTIONS 5
+#define NUMFUNCTIONS 10
 #endif
 
 extern void *myglfunc[NUMFUNCTIONS];
@@ -24,10 +24,15 @@ extern void *myglfunc[NUMFUNCTIONS];
 #define oglBindProgramPipeline          ((PFNGLBINDPROGRAMPIPELINEPROC)myglfunc[2])
 #define oglUseProgramStages             ((PFNGLUSEPROGRAMSTAGESPROC)myglfunc[3])
 #define oglProgramUniform4fv            ((PFNGLPROGRAMUNIFORM4FVPROC)myglfunc[4])
+#define oglGenFramebuffers              ((PFNGLGENFRAMEBUFFERSPROC)myglfunc[5])
+#define oglBindFramebuffer              ((PFNGLBINDFRAMEBUFFERPROC)myglfunc[6])
+#define oglTexStorage2D                 ((PFNGLTEXSTORAGE2DPROC)myglfunc[7])
+#define oglDrawBuffers                  ((PFNGLDRAWBUFFERSPROC)myglfunc[8])
+#define oglFramebufferTexture           ((PFNGLFRAMEBUFFERTEXTUREPROC)myglfunc[9])
 
 #ifdef DEBUG
-#define oglGetProgramiv          ((PFNGLGETPROGRAMIVPROC)myglfunc[5])
-#define oglGetProgramInfoLog     ((PFNGLGETPROGRAMINFOLOGPROC)myglfunc[6])
+#define oglGetProgramiv          ((PFNGLGETPROGRAMIVPROC)myglfunc[10])
+#define oglGetProgramInfoLog     ((PFNGLGETPROGRAMINFOLOGPROC)myglfunc[11])
 #endif
 
 // init

@@ -17,7 +17,12 @@ static char *strs[] = {
     "glBindProgramPipeline",
     "glUseProgramStages",
     "glProgramUniform4fv",
-    //--
+	"glGenFramebuffers",
+	"glBindFramebuffer",
+	"glTexStorage2D",
+	"glDrawBuffers",
+	"glFramebufferTexture",
+
     #ifdef DEBUG
 	"glGetProgramiv",
 	"glGetProgramInfoLog",

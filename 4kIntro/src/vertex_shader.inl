@@ -1,4 +1,4 @@
-static const char *vsh = \
+static const char *vertex_shader_glsl = \
 "#version 430\n"
 
 "layout (location=0)in vec2 inVer;"
