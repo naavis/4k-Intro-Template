@@ -1,3 +1,5 @@
+**Update:** I haven't been keeping this repo up to date any more, and nowadays I would recommend you to use the [Leviathan 2.0 framework](https://github.com/armak/Leviathan-2.0) instead of this template.
+
 # 4k Intro Template
 
 Template code for building a 4k demoscene intro on Windows.
